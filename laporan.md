@@ -49,13 +49,13 @@ Tabel 4.3 — Hasil berdasarkan kode praktikum
 
 | No | Eksperimen | Acuan dari modul | Hasil pengamatan |
 |---|---|---|---|
-| 1 | Header sticky saat digulir | Header menempel di atas saat halaman digulir dan memiliki ruang sendiri pada awal halaman. | |
-| 2a | Header fixed tanpa padding atas pada body | Konten dimulai dari atas halaman sehingga bagian awalnya dapat tertutup header. | |
-| 2b | Header fixed dengan padding atas 64 px | Konten dimulai di bawah header. | |
-| 3 | Hapus `position: relative` dari `.notif` | Posisi badge mengacu pada header sehingga badge berpindah ke dekat sudut kanan atas header. | |
-| 4 | Beri lapis 1 `z-index: 3`, lalu lapis 2 `z-index: 5` | Lapis 1 mula-mula berada di depan. Setelah perubahan kedua, lapis 2 menutupi lapis 1 di area irisan. | |
-| 5 | Turunkan z-index header menjadi 1 | Saat halaman digulir, lapisan dengan z-index 3 atau 5 dapat menutupi header. | |
-| 6 | Tombol Bantuan pada lebar layar 375 px | Tombol tetap berjarak 24 px dari tepi kanan dan bawah layar saat halaman digulir. | |
+| 1 | Header sticky saat digulir | Header menempel di atas saat halaman digulir dan memiliki ruang sendiri pada awal halaman. | Saat halaman digulir 300 px, posisi header tetap di tepi atas layar. |
+| 2a | Header fixed tanpa padding atas pada body | Konten dimulai dari atas halaman sehingga bagian awalnya dapat tertutup header. | Bagian atas judul masuk ke belakang header. Judul mulai sekitar 45 px dari atas, sedangkan header menutupi 64 px pertama. |
+| 2b | Header fixed dengan padding atas 64 px | Konten dimulai di bawah header. | Dengan padding atas 64 px, judul turun dan terlihat utuh di bawah header. |
+| 3 | Hapus `position: relative` dari `.notif` | Posisi badge mengacu pada header sehingga badge berpindah ke dekat sudut kanan atas header. | Setelah posisi relative pada tombol dihapus, acuan posisi badge berubah menjadi header. Angka notifikasi berpindah ke pojok kanan atas header. |
+| 4 | Beri lapis 1 `z-index: 3`, lalu lapis 2 `z-index: 5` | Lapis 1 mula-mula berada di depan. Setelah perubahan kedua, lapis 2 menutupi lapis 1 di area irisan. | Di bagian yang bertumpuk, Lapis 1 tampil di depan saat nilainya 3. Setelah Lapis 2 diberi nilai 5, Lapis 2 tampil paling depan. |
+| 5 | Turunkan z-index header menjadi 1 | Saat halaman digulir, lapisan dengan z-index 3 atau 5 dapat menutupi header. | Saat kotak digulir sampai bertemu header, Lapis 2 yang bernilai 5 tampil di atas header yang bernilai 1. |
+| 6 | Tombol Bantuan pada lebar layar 375 px | Tombol tetap berjarak 24 px dari tepi kanan dan bawah layar saat halaman digulir. | Pada layar selebar 375 px, tombol Bantuan tetap berjarak 24 px dari kanan dan bawah, baik sebelum maupun sesudah halaman digulir. |
 
 ## Percobaan 4 — Dashboard
 
