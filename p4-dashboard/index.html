@@ -1,66 +1,212 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIAKAD Mini — Dashboard</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
 
-    <header class="navbar">
-      <div class="brand">SIAKAD Mini</div>
-      <nav class="nav-kanan">
-        <button class="notif" aria-label="Notifikasi, 3 belum dibaca">
-          🔔 <span class="badge">3</span>
-        </button>
-        <a href="#" class="logout">Logout</a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIAKAD Mini — Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="brand">SIAKAD Mini</div>
+    <nav class="nav-kanan">
+      <button class="notif" aria-label="Notifikasi, 3 belum dibaca">
+        🔔 <span class="badge">3</span>
+      </button>
+
+      <span class="profil">
+        <span class="avatar" aria-hidden="true">AP</span>
+        <span>Admin Prodi</span>
+      </span>
+
+      <a href="#" class="logout">Logout</a>
+    </nav>
+  </header>
+
+  <div class="wrapper">
+    <aside class="sidebar">
+      <nav class="menu" aria-label="Menu utama">
+        <a href="#" class="aktif">Dashboard</a>
+        <a href="#">Data Mahasiswa</a>
+        <a href="#">Mata Kuliah</a>
+        <a href="#">Nilai</a>
+        <a href="#">Laporan</a>
       </nav>
-    </header>
+      <a href="#" class="pengaturan">Pengaturan</a>
+    </aside>
 
-    <div class="wrapper">
-      <aside class="sidebar">
-        <nav class="menu" aria-label="Menu utama">
-          <a href="#" class="aktif">Dashboard</a>
-          <a href="#">Data Mahasiswa</a>
-          <a href="#">Mata Kuliah</a>
-          <a href="#">Nilai</a>
-          <a href="#">Laporan</a>
-        </nav>
-      </aside>
+    <main class="konten">
+      <h1>Dashboard</h1>
 
-      <main class="konten">
-        <h1>Dashboard</h1>
+      <section class="statistik">
+        <article class="kartu">
+          <h2>Mahasiswa Aktif</h2>
+          <p class="angka">1.248</p>
+        </article>
+        <article class="kartu">
+          <h2>Dosen</h2>
+          <p class="angka">62</p>
+        </article>
+        <article class="kartu">
+          <h2>Mata Kuliah</h2>
+          <p class="angka">94</p>
+        </article>
+        <article class="kartu kartu-baru">
+          <h2>Kelas Hari Ini</h2>
+          <span class="label-baru">Baru</span>
+          <p class="angka">18</p>
+        </article>
+      </section>
 
-        <section class="statistik">
-          <article class="kartu">
-            <h2>Mahasiswa Aktif</h2>
-            <p class="angka">1.248</p>
-          </article>
-          <article class="kartu">
-            <h2>Dosen</h2>
-            <p class="angka">62</p>
-          </article>
-          <article class="kartu">
-            <h2>Mata Kuliah</h2>
-            <p class="angka">94</p>
-          </article>
-          <article class="kartu">
-            <h2>Kelas Hari Ini</h2>
-            <p class="angka">18</p>
-          </article>
-        </section>
+      <section class="panel">
+        <h2>Pengumuman</h2>
+        <p>Pengisian KRS semester genap dibuka mulai Senin. Pastikan data akademik sudah diverifikasi dosen PA.</p>
+      </section>
+      <table class="tabel-jadwal" aria-labelledby="judul-jadwal">
+        <thead>
+          <tr>
+            <th scope="col">No</th>
+            <th scope="col">Kode</th>
+            <th scope="col">Mata Kuliah</th>
+            <th scope="col">SKS</th>
+            <th scope="col">Kelas</th>
+            <th scope="col">Ket</th>
+            <th scope="col">Hari</th>
+            <th scope="col">Jam</th>
+          </tr>
+        </thead>
 
-        <section class="panel">
-          <h2>Pengumuman</h2>
-          <p>Pengisian KRS semester genap dibuka mulai Senin. Pastikan data akademik sudah diverifikasi dosen PA.</p>
-        </section>
-      </main>
-    </div>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>FIT1001</td>
+            <td>Bahasa Inggris</td>
+            <td>2</td>
+            <td>REG A PAGI BJB</td>
+            <td>BARU</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>FIT1009</td>
+            <td>Technopreneurship</td>
+            <td>2</td>
+            <td>REG A PAGI BJB</td>
+            <td>BARU</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>MGU1103</td>
+            <td>Pendidikan Kewarganegaraan</td>
+            <td>2</td>
+            <td>REG A PAGI BJB</td>
+            <td>BARU</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>MGU1108</td>
+            <td>Bahasa Arab</td>
+            <td>2</td>
+            <td>REG A PAGI BJB</td>
+            <td>BARU</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>TIF1301</td>
+            <td>Kalkulus</td>
+            <td>2</td>
+            <td>REG A PAGI BJB</td>
+            <td>BARU</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>TIF1302</td>
+            <td>Pemrograman Terstruktur</td>
+            <td>3</td>
+            <td>REG A PAGI BJB</td>
+            <td>BARU</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>TIF1303</td>
+            <td>Pemrograman Web 1</td>
+            <td>3</td>
+            <td>REG A PAGI BJB</td>
+            <td>BARU</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>TIF1304</td>
+            <td>Sistem Berkas</td>
+            <td>3</td>
+            <td>REG A PAGI BJB</td>
+            <td>BARU</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>TIF1305</td>
+            <td>Jaringan Komputer</td>
+            <td>2</td>
+            <td>REG A PAGI BJB</td>
+            <td>BARU</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>TIF1306</td>
+            <td>Praktek Jaringan Komputer</td>
+            <td>1</td>
+            <td>REG A PAGI BJB</td>
+            <td>BARU</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>TIF1307</td>
+            <td>Sistem Operasi</td>
+            <td>2</td>
+            <td>REG A PAGI BJB</td>
+            <td>BARU</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+        </tbody>
 
-    <footer class="footer">
-      &copy; 2026 Program Studi Teknik Informatika — FTI UNISKA
-    </footer>
+        <tfoot>
+          <tr>
+            <th scope="row" colspan="3">Jumlah SKS Diterima</th>
+            <td>24</td>
+            <td colspan="4"></td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
+  </div>
 
-  </body>
+  <footer class="footer">
+    &copy; 2026 Program Studi Teknik Informatika — FTI UNISKA
+  </footer>
+
+</body>
+
 </html>
