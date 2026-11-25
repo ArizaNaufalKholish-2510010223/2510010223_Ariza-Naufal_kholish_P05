@@ -1,8 +1,8 @@
 # Laporan Praktikum Pertemuan 5 — Pemrograman Web 1
 
-Nama : …  
-NIM : …  
-Kelas : …
+Nama : Ariza Naufal Kholish 
+NIM : 2510010223 
+Kelas : 3A Reg BJB
 
 ## Percobaan 1 — Box Model
 
